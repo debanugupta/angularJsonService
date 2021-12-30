@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { SignupFormComponent } from './components/signup-form/signup-form.component';
 import { SignupDetailsComponent } from './components/signup-details/signup-details.component';
 import { FieldmatchesDirective } from './validators/fieldmatches.directive';
+import { AppRoutingModule } from './app-routing.module';
 
 enum RoutePaths {
   SignupForm = 'signup-form',
@@ -30,7 +31,7 @@ export const appRoutes: Routes = [
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    RouterModule.forRoot(appRoutes, { relativeLinkResolution: 'legacy' }),
+    AppRoutingModule
   ],
   providers: [
   ],
